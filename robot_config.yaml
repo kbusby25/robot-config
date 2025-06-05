@@ -1,0 +1,45 @@
+# Autonomous Delivery Robot Configuration
+robot:
+  name: "DeliveryBot-v1"
+  version: "1.0.0"
+  
+hardware:
+  sensors:
+    lidar:
+      enabled: true
+      range: 10.0  # meters
+      frequency: 10  # Hz
+    camera:
+      enabled: true
+      resolution: "1920x1080"
+      fps: 30
+  
+  motors:
+    max_speed: 2.0  # m/s
+    acceleration: 1.0  # m/s²
+    
+navigation:
+  algorithm: "A_star"
+  obstacle_avoidance: true
+  safety_distance: 0.5  # meters
+
+mission:
+  max_payload: 5.0  # kg
+  battery_threshold: 20  # percentage
+
+# gps:
+#   enabled: true
+#   provider: "GPS_Module_v2"
+#   accuracy: "high"  # high, medium, low
+#   update_rate: 5    # Hz
+#   coordinates:
+#     format: "decimal_degrees"
+#     datum: "WGS84"
+
+# waypoints:
+#   max_waypoints: 50
+#   precision: 1.0  # meters
+#   auto_return_home: true
+#   home_coordinates:
+#     latitude: 37.7749
+#     longitude: -122.4194

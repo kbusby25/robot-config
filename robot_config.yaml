@@ -64,16 +64,16 @@ gps:
   # The geodetic datum to use for coordinate interpretation. WGS84 is the global standard.
   datum: "WGS84"
 
-  # # Defines how the robot handles mission destinations based on GPS coordinates.
-  # waypoints:
-  #   # The maximum number of destinations the robot can handle in a single mission.
-  #   max_waypoints: 50
-  #   # The acceptable margin of error (in meters) for arriving at a waypoint.
-  #   precision: 1.0  # meters
-  #   # If true, the robot will automatically return to its home base after completing all waypoints.
-  #   auto_return_home: true
-  #   # The geographic coordinates of the robot's home base or charging station.
-  #   # NOTE: Coordinates are for Damascus Centre, a central commercial location in Damascus, MD.
-  #   home_coordinates:
-  #     latitude: 39.2771
-  #     longitude: -77.2055
+  # Defines how the robot handles mission destinations based on GPS coordinates.
+  waypoints:
+    # The maximum number of destinations the robot can handle in a single mission.
+    max_waypoints: 50
+    # The acceptable margin of error (in meters) for arriving at a waypoint.
+    precision: 1.0  # meters
+    # If true, the robot will automatically return to its home base after completing all waypoints.
+    auto_return_home: true
+    # The geographic coordinates of the robot's home base or charging station.
+    # NOTE: Coordinates are for Damascus Centre, a central commercial location in Damascus, MD.
+    home_coordinates:
+      latitude: 39.2771
+      longitude: -77.2055

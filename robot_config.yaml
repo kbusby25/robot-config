@@ -30,7 +30,7 @@ hardware:
 navigation:
   # The frequency (in Hz) at which the navigation stack runs its main control loop.
   # A higher rate allows for faster reaction to environmental changes.
-  update_rate: 5 # HZ
+  update_rate: 5 # Hz
   # Top speed of the robot. Set to a safe speed for pedestrian environments.
   max_speed: 1.5   # meters/sec (approx. 3.35 mph)
   # Maximum acceleration to ensure smooth and stable movement.
@@ -55,14 +55,14 @@ power_management:
 
 # --- GPS & WAYPOINT CONFIGURATION ---
 # Parameters for the GPS module and the logic for handling mission waypoints.
-# gps:
-#   enabled: true
-#   # The specific GPS module model. u-blox ZED-F9P is a high-precision, RTK-capable module.
-#   provider: "u-blox ZED-F9P"
-#   # Expected precision. RTK (Real-Time Kinematics) provides highly accurate location data.
-#   accuracy: "Centimeter-level with RTK"
-#   # The geodetic datum to use for coordinate interpretation. WGS84 is the global standard.
-#   datum: "WGS84"
+gps:
+  enabled: true
+  # The specific GPS module model. u-blox ZED-F9P is a high-precision, RTK-capable module.
+  provider: "u-blox ZED-F9P"
+  # Expected precision. RTK (Real-Time Kinematics) provides highly accurate location data.
+  accuracy: "Centimeter-level with RTK"
+  # The geodetic datum to use for coordinate interpretation. WGS84 is the global standard.
+  datum: "WGS84"
 
   # # Defines how the robot handles mission destinations based on GPS coordinates.
   # waypoints:

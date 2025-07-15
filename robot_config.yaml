@@ -30,7 +30,7 @@ hardware:
 navigation:
   # The frequency (in Hz) at which the navigation stack runs its main control loop.
   # A higher rate allows for faster reaction to environmental changes.
-  update_rate: 5 # Hz
+  update_rate: 10 # Hz
   # Top speed of the robot. Set to a safe speed for pedestrian environments.
   max_speed: 1.5   # meters/sec (approx. 3.35 mph)
   # Maximum acceleration to ensure smooth and stable movement.
